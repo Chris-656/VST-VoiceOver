@@ -41,9 +41,11 @@ pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --e
 ```
 # Data Preparation and Copying
 Define an folder where the vpoice samples are defined. The format must be like this.
+
 ![image](https://github.com/user-attachments/assets/20024ba6-2f71-41d4-a5f4-c77b102d13f6)
 
-Structure of the template file 
+Structure of the template metadate.csv file 
+
 ```
 4000000001_4000000300_CustomerService/4000000022.wav|We're deeply sorry about that.
 4000000001_4000000300_CustomerService/4000000026.wav|Let me check and see what I can do for you.
