@@ -39,7 +39,9 @@ pip install numpy==1.26.4    // since numpy 2-02 is not working in this workflow
 pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
 
 ```
-# Data Copying
+# Data Preparation and Copying
+Define an folder where the vpoice samples are defined. The format must be like this.
+
 ```
 cp -r /mnt/d/AItranslate/Input/michi ~/piper/datasets
 mkdir -p ~/piper/my-training
