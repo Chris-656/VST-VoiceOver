@@ -16,16 +16,23 @@ sudo apt update
 sudo apt dist-upgrade -y
 sudo apt install python3-dev python3.10-venv espeak-ng ffmpeg build-essential -y
 ```
-
-
-Starting installing packages
+getting actual piper
 ```
 cd ~/
 git clone https://github.com/rhasspy/piper.git
+```
+activate venv environment
+
+```
 python3 -m venv ~/piper/src/python/.venv
 
 cd ~/piper/src/python/
 source ~/piper/src/python/.venv/bin/activate
+```
+
+Starting installing packages, only one first time necessary
+```
+
 
 #python3 -m pip install --upgrade pip
 python3 -m pip install piper-tts     (new worked for me)
@@ -55,8 +62,8 @@ Structure of the template metadate.csv file
 ```
 
 ```
-cp -r /mnt/d/AItranslate/Input/chris2 ~/piper/datasets
-mkdir -p ~/piper/my-training
+//cp -r /mnt/d/AItranslate/Input/chris2 ~/piper/datasets
+//mkdir -p ~/piper/my-training
 ```
 
 # Definitions used during the training
@@ -64,12 +71,13 @@ The following path and name of files are defined here for the entire process
 
 ```
 model_name="chris2"
-input_dir="~/piper/$model_name/input"
-output_dir="~/piper/$model_name/training"
-model_dir="~/piper/$model_name/model"
-lastepoch_dir="~/piper/$model_name
+input_dir=~/piper/$model_name/input
+training_dir=~/piper/$model_name/training
+model_dir=~/piper/$model_name/model
+chkpt_dir=~/piper/$model_name/checkpoints
+lastepoch_dir=~/piper/$model_name
 
-mkdir -p $model_dir
+mkdir -p ~piper/$model_name
 mkdir -p $output_dir
 mkdir -p $model_dir
 
@@ -78,8 +86,8 @@ mkdir -p $model_dir
 getting RYAn medium pre-learned data in order to fine tune on specific training voice data
 ```
 wget https://huggingface.co/datasets/rhasspy/piper-checkpoints/resolve/main/en/en_US/ryan/medium/epoch%3D4641-step%3D3104302.ckpt -O  $lastepoch_dir/epoch=4641-step=3104302.ckpt
-
 ```
+
 # Preprocess
 ```
 cd ~/piper/src/python/
@@ -111,11 +119,18 @@ python3 -m piper_train \
     --precision 32
 ```
 
+
 # Exporting
 This command creates the onnx files to be used in piper or subtitleedit.
+copy the epoch to used epoch
+```
+checkpointfile=epoch=5589-step=1382940.ckpt            // change to yout epoch file from the training
+
+cp -r $training_dir/lightning_logs/version_0/checkpoints/$checkpointfile $chkpt_dir
+```
 
 ```
-last_epoch="$training_dir/lightning_logs/version_0/checkpoints/epoch=5589-step=1382940.ckpt"  // define the checkpoint from the training
+last_epoch="$chkpt_dir/$checkpointfile"  // define the checkpoint from the training
 
 python3 -m piper_train.export_onnx \
    $last_epoch \
