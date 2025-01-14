@@ -35,8 +35,7 @@ sudo bash ~/piper/src/python/build_monotonic_align.sh
 
 python3 -m pip install torchmetrics==0.11.4
 
-??? pip install numpy==1.26.4
-
+pip install numpy==1.26.4    // since numpy 2-02 is not working in this workflow
 pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
 
 ```
@@ -60,10 +59,10 @@ python3 -m piper_train.preprocess \
 
 # Training
 ## Ryan
+getting RYAn medium prelearned data in order to fine tune on specific training voice data
 ```
 wget https://huggingface.co/datasets/rhasspy/piper-checkpoints/resolve/main/en/en_US/ryan/medium/epoch%3D4641-step%3D3104302.ckpt -O ~/piper/epoch=4641-step=3104302.ckpt
 
-pip install numpy==1.26.4    // since numpy 2-02 is not working in this workflow
 ```
 
 ```
