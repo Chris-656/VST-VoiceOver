@@ -2,7 +2,8 @@
 
 # Workflow for subtitle Edit
 
-## Install subtitle edit updated version from git (pull request is panding)
+## Install subtitle edit updated version from git 
+- available in the new beta (https://github.com/SubtitleEdit/subtitleedit/releases/download/4.0.11/SubtitleEditBeta.zip)
 
 ## Loading Video
 Load the video (mkv) into subtitle edit
