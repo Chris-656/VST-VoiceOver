@@ -1,5 +1,5 @@
 # Installing
-This workflow gives exact commands how to clone a voice using piper locally. NVideo card is necessary. I used the workflow from "https://ssamjh.nz/create-custom-piper-tts-voice/" and adpated it for my use.
+This workflow gives exact commands how to clone a voice using piper locally. NVidea card is necessary. I used the workflow from "https://ssamjh.nz/create-custom-piper-tts-voice/" and adpated it for my use.
 
 ## using wsl 
 ```
