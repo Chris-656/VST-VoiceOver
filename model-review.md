@@ -39,11 +39,11 @@ Die Ergebnisse sind in den folgenden Tabellen zusammengefasst:
 | tiny + Purfview's Faster-Whisper-XXL     | Deutsch → Deutsch                      | 3           | 4                | 3             | 3          | **13**           | 02:00 min       | 00:12 min            | Teilweise unklare Sätze, kurze Einheiten, wenig Satzzeichen. |
 | base + Purfview's Faster-Whisper-XXL     | Deutsch → Deutsch                      | 4           | 4                | 4             | 3          | **15**           | 02:00 min       | 00:08 min            | Gute Struktur, aber kaum Punktsetzung. Leicht verschachtelte Sätze. |
 | small + Purfview's Faster-Whisper-XXL    | Deutsch → Deutsch                      | 4           | 4                | 4             | 4          | **16**           | 02:00 min       | 00:08 min            | Bessere Satzstruktur und Trennung. Höhere Interpunktion. |
-| medium + Purfview's Faster-Whisper-XXL   | Deutsch → Deutsch                      | 5           | 4                | 4             | 4          | **17**           | 02:00 min       | 00:17 min            | Sehr gute Lesbarkeit und natürliche Satzgrenzen. |
+| medium + Purfview's Faster-Whisper-XXL   | Deutsch → Deutsch                      | 5           | 3                | 3             | 4          | **15**           | 02:00 min       | 00:17 min            | Sehr gute Lesbarkeit und natürliche Satzgrenzen. |
 | large_v1 + Purfview's Faster-Whisper-XXL               | Deutsch → Deutsch                      | 5           | 4                | 4             | 4          | **17**           | 02:00 min       | 00:36 min            | Sehr gut strukturiert, minimal holprige Stellen, insgesamt aber sehr solide. |
 | large_v2 + Purfview's Faster-Whisper-XXL               | Deutsch → Deutsch                      | 5           | 5                | 5             | 4          | **19**           | 02:00 min       | 00:17 min            | Exzellente Synchronisation und Satzstruktur, extrem hohe Lesbarkeit. |
-| large_v3 + Purfview's Faster-Whisper-XXL               | Deutsch → Deutsch                      | 5           | 5                | 5             | 5          | **20**           | 02:00 min       | 00:33 min            | Sehr natürliche Transkription, nahezu identisch zum Original. |
-| large-turbo-v3 + Purfview's Faster-Whisper-XXL         | Deutsch → Deutsch                      | 5           | 5                | 5             | 5          | **20**           | 02:00 min       | 00:21 min            | Sehr schnell, sauber und stilistisch extrem natürlich. |
+| large_v3 + Purfview's Faster-Whisper-XXL               | Deutsch → Deutsch                      | 5           | 5                | 4             | 5          | **19**           | 02:00 min       | 00:33 min            | Sehr natürliche Transkription, nahezu identisch zum Original. |
+| large-turbo-v3 + Purfview's Faster-Whisper-XXL         | Deutsch → Deutsch                      | 5           | 4                | 4             | 5          | **18**           | 02:00 min       | 00:21 min            | Sehr schnell, sauber und stilistisch extrem natürlich. |
 > 🧠 **Interpretation:**  
 > `tiny` liefert einfache, teilweise fragmentierte Sätze mit wenig Interpunktion.  
 > `base` bietet eine solide Grundstruktur und gute Synchronisation, bleibt jedoch bei der Zeichensetzung und Satztrennung limitiert.  
@@ -65,17 +65,17 @@ Diese Analyse zeigt, wie stark die automatisch erzeugten Transkriptionen der ver
 
 Diese Matrix zeigt die Ähnlichkeit zwischen den automatisch generierten Transkriptionen und dem Originaltext aus dem Video.
 
-| Modellvergleich          | Original | tiny  | base  | small | medium | large_v1 | large_v2 | large_v3 | large-turbo-v3 |
-|---------------------------|----------|-------|--------|--------|--------|----------|----------|----------|----------------|
-| **Original**              | –        | 52 %  | 90 %   | 97 %   | 92 %   | 94 %     | 95 %     | 96 %     | 96 %           |
-| **tiny**                  | 52 %     | –     | 44 %   | 49 %   | 38 %   | 41 %     | 42 %     | 43 %     | 44 %           |
-| **base**                  | 90 %     | 44 %  | –      | 90 %   | 89 %   | 88 %     | 89 %     | 89 %     | 90 %           |
-| **small**                 | 97 %     | 49 %  | 90 %   | –      | 95 %   | 95 %     | 96 %     | 97 %     | 96 %           |
-| **medium**                | 92 %     | 38 %  | 89 %   | 95 %   | –      | 92 %     | 93 %     | 94 %     | 94 %           |
-| **large_v1**              | 94 %     | 41 %  | 88 %   | 95 %   | 92 %   | –        | 98 %     | 96 %     | 97 %           |
-| **large_v2**              | 95 %     | 42 %  | 89 %   | 96 %   | 93 %   | 98 %     | –        | 97 %     | 97 %           |
-| **large_v3**              | 96 %     | 43 %  | 89 %   | 97 %   | 94 %   | 96 %     | 97 %     | –        | 98 %           |
-| **large-turbo-v3**        | 96 %     | 44 %  | 90 %   | 96 %   | 94 %   | 97 %     | 97 %     | 98 %     | –              |
+| Model Comparison | original | tiny | base | small | medium | large_v1 | large_v2 | large_v3 | large-turbo-v3 |
+|----|----|----|----|----|----|----|----|----|----|
+| **original** | – | 52% | 90% | 24% | 24% | 97% | 97% | 97% | 96% |
+| **tiny** | 60% | – | 44% | 49% | 38% | 47% | 51% | 35% | 46% |
+| **base** | 90% | 50% | – | 90% | 89% | 89% | 89% | 91% | 92% |
+| **small** | 97% | 55% | 90% | – | 95% | 98% | 96% | 84% | 92% |
+| **medium** | 91% | 46% | 76% | 76% | – | 94% | 91% | 77% | 89% |
+| **large_v1** | 97% | 54% | 89% | 98% | 92% | – | 96% | 96% | 94% |
+| **large_v2** | 97% | 53% | 90% | 24% | 24% | 96% | – | 98% | 97% |
+| **large_v3** | 97% | 44% | 78% | 24% | 24% | 87% | 98% | – | 94% |
+| **large-turbo-v3** | 96% | 54% | 91% | 71% | 91% | 94% | 97% | 97% | – |
 
 > 🧠 **Interpretation:**  
 > Die Modelle `large_v3` und `large-turbo-v3` liefern die höchste Übereinstimmung mit dem Originaltext (**96–98 %**) und übertreffen damit die bisherigen Modelle.  
@@ -135,14 +135,14 @@ Dies ist **charakteristisch für natürliche Sprache** – derselbe Inhalt kann 
 |    ↳ GPT-4o turbo                                   | Deutsch → Englisch                     | 5                      | 4       | 4              | 5          | 18               | 02:00 min       | 00:08 min            | Schnell und sehr akkurat, besonders gut bei Fachbegriffen. |
 |    ↳ GPT-3.5 turbo                                  | Deutsch → Englisch                     | 4                      | 3       | 3              | 4          | 14               | 02:00 min       | 00:05 min            | Übersetzung teilweise wörtlich, leichte Steifheit im Satzbau. Sinn korrekt, aber etwas weniger idiomatisch als GPT-4. |
 |    ↳ GPT-4                                          | Deutsch → Englisch                     | 5                      | 4       | 4              | 5          | 18               | 02:00 min       | 00:11 min            | Sehr hohes Sprachniveau, praktisch fehlerfrei und stilistisch geschliffen. |
-| MyMemory Translate                                  | Deutsch → Englisch                     | 5                      | 4       | 5              | 4          | 18               | 02:00 min       | 00:03 min            | Beste Balance aus Stil, Natürlichkeit und Korrektheit. „Texture Mapping“ korrekt erkannt, idiomatisch sauber. |
+| MyMemory Translate                                  | Deutsch → Englisch                     | 5                      | 4       | 4              | 4          | 17               | 02:00 min       | 00:03 min            | Beste Balance aus Stil, Natürlichkeit und Korrektheit. „Texture Mapping“ korrekt erkannt, idiomatisch sauber. |
 | Groq LLM                                           | Deutsch → Englisch                     | 4                      | 3       | 3              | 3          | 13               | 02:00 min       | 00:03 min            | Klar verständlich, aber teilweise etwas maschinenhaft und wenig idiomatisch. |
 | Winstxnhdw-HLLB API                                | Deutsch → Englisch                     | 3                      | 3       | 2              | 2          | 10               | 02:00 min       | 00:24 min            | Technisch korrekt, aber oft sehr steif und unnatürlich. |
-| Ollama (Mistral)                                   | Deutsch → Englisch                     | 5                      | 4       | 4              | 4          | 17               | 02:00 min       | 00:04 min            | Gute Natürlichkeit, sauberer Satzbau, kleine stilistische Schwächen. |
+| Ollama (Mistral)                                   | Deutsch → Englisch                     | 4                      | 3       | 4              | 3          | 14               | 02:00 min       | 00:04 min            | Gute Natürlichkeit, sauberer Satzbau, kleine stilistische Schwächen. |
 |    ↳ DeepSeek R1                                   | Deutsch → Englisch                     | 3                      | 3       | 3              | 3          | 12               | 02:00 min       | 00:58 min            | Durchschnittliche Übersetzung, teilweise wortwörtlich und repetitiv. |
 |    ↳ Gemma 3                                       | Deutsch → Englisch                     | 4                      | 3       | 3              | 3          | 13               | 02:00 min       | 00:06 min            | Relativ klar, aber sprachlich etwas eintönig und wenig dynamisch. |
 |    ↳ ZongweiGemma3 Translator 1B                   | Deutsch → Englisch                     | 3                      | 3       | 3              | 2          | 11               | 02:00 min       | 00:05 min            | Verständlich, aber einige grammatikalische Schwächen und steife Formulierungen. |
-| Gemini 2.0 Flash                                   | Deutsch → Englisch                     | 4                      | 4       | 4              | 4          | 16               | 02:00 min       | 00:02 min            | Klar formuliert, meist idiomatisch, leicht vereinfachte Strukturen. |
+| Gemini 2.0 Flash                                   | Deutsch → Englisch                     | 4                      | 4       | 3             | 4          | 15               | 02:00 min       | 00:02 min            | Klar formuliert, meist idiomatisch, leicht vereinfachte Strukturen. |
 > 🧠 **Interpretation:** Übersetzungen mit GPT-4-Modellen (inkl. `turbo`, `mini`) sind stilistisch überlegen, besonders bei Fachbegriffen und Satzfluss. `DeepL` bietet eine solide Leistung, während `Google Translate V1` klare Schwächen bei Terminologie und Natürlichkeit zeigt.
 
 
@@ -150,24 +150,24 @@ Dies ist **charakteristisch für natürliche Sprache** – derselbe Inhalt kann 
 
 Diese Matrix zeigt den tatsächlichen Ähnlichkeitsgrad (textuelle Übereinstimmung) zwischen allen automatisch generierten Übersetzungen – basierend auf realen .srt-Dateien und analysiert mittels `SequenceMatcher`.
 
-| Modellvergleich          | Google V1 | DeepL V2 | ChatGPT mini | GPT-4o mini | GPT-4o | GPT-4o turbo | GPT-3.5 turbo | GPT-4 | MyMemory | Groq | Winstxnhdw-HLLB | Ollama (Mistral) | DeepSeek R1 | Gemma 3 | ZongweiGemma3 | Gemini 2.0 Flash |
-|---------------------------|-----------|----------|--------------|-------------|--------|---------------|----------------|--------|----------|------|----------------|------------------|------------|---------|---------------|-----------------|
-| **Google V1**             | –         | 14 %     | 8 %          | 7 %         | 7 %    | 7 %           | 9 %            | 7 %    | 12 %     | 10 % | 9 %            | 8 %              | 8 %        | 7 %     | 7 %           | 6 %             |
-| **DeepL V2**              | 14 %      | –        | 66 %         | 62 %        | 62 %   | 63 %          | 64 %           | 64 %   | 66 %     | 59 % | 58 %           | 57 %             | 58 %       | 57 %    | 56 %          | 55 %            |
-| **ChatGPT mini**          | 8 %       | 66 %     | –            | 79 %        | 77 %   | 78 %          | 74 %           | 76 %   | 68 %     | 60 % | 59 %           | 58 %             | 58 %       | 57 %    | 56 %          | 55 %            |
-| **GPT-4o mini**           | 7 %       | 62 %     | 79 %         | –           | 79 %   | 80 %          | 74 %           | 78 %   | 64 %     | 59 % | 58 %           | 57 %             | 58 %       | 57 %    | 56 %          | 55 %            |
-| **GPT-4o**                | 7 %       | 62 %     | 77 %         | 79 %        | –      | 80 %          | 73 %           | 80 %   | 63 %     | 58 % | 57 %           | 56 %             | 57 %       | 56 %    | 56 %          | 54 %            |
-| **GPT-4o turbo**          | 7 %       | 63 %     | 78 %         | 80 %        | 80 %   | –             | 75 %           | 80 %   | 64 %     | 58 % | 57 %           | 56 %             | 57 %       | 56 %    | 56 %          | 54 %            |
-| **GPT-3.5 turbo**         | 9 %       | 64 %     | 74 %         | 74 %        | 73 %   | 75 %          | –              | 74 %   | 64 %     | 57 % | 56 %           | 55 %             | 56 %       | 55 %    | 54 %          | 53 %            |
-| **GPT-4**                 | 7 %       | 64 %     | 76 %         | 78 %        | 80 %   | 80 %          | 74 %           | –      | 63 %     | 58 % | 57 %           | 56 %             | 57 %       | 56 %    | 56 %          | 54 %            |
-| **MyMemory Translate**    | 12 %      | 66 %     | 68 %         | 64 %        | 63 %   | 64 %          | 64 %           | 63 %   | –        | 58 % | 57 %           | 56 %             | 57 %       | 56 %    | 55 %          | 54 %            |
-| **Groq**                  | 10 %      | 59 %     | 60 %         | 59 %        | 58 %   | 58 %          | 57 %           | 58 %   | 58 %     | –    | 66 %           | 61 %             | 60 %       | 59 %    | 58 %          | 55 %            |
-| **Winstxnhdw-HLLB**       | 9 %       | 58 %     | 59 %         | 58 %        | 57 %   | 57 %          | 56 %           | 57 %   | 57 %     | 66 % | –              | 63 %             | 62 %       | 61 %    | 60 %          | 58 %            |
-| **Ollama (Mistral)**      | 8 %       | 57 %     | 58 %         | 57 %        | 56 %   | 56 %          | 55 %           | 56 %   | 56 %     | 61 % | 63 %           | –                | 84 %       | 82 %    | 81 %          | 72 %            |
-| **DeepSeek R1**           | 8 %       | 58 %     | 58 %         | 58 %        | 57 %   | 57 %          | 56 %           | 57 %   | 57 %     | 60 % | 62 %           | 84 %             | –          | 85 %    | 84 %          | 73 %            |
-| **Gemma 3**               | 7 %       | 57 %     | 57 %         | 57 %        | 56 %   | 56 %          | 55 %           | 56 %   | 56 %     | 59 % | 61 %           | 82 %             | 85 %       | –       | 92 %          | 71 %            |
-| **ZongweiGemma3**         | 7 %       | 56 %     | 56 %         | 56 %        | 56 %   | 56 %          | 54 %           | 56 %   | 55 %     | 58 % | 60 %           | 81 %             | 84 %       | 92 %    | –             | 70 %            |
-| **Gemini 2.0 Flash**      | 6 %       | 55 %     | 55 %         | 55 %        | 54 %   | 54 %          | 53 %           | 54 %   | 54 %     | 55 % | 58 %           | 72 %             | 73 %       | 71 %    | 70 %          | –               |
+| Model Comparison | Google_V1 | DeepL_V2 | ChatGPT-mini-3o | GPT-4o-mini | GPT-4o | GPT-4o-turbo | GPT-3.5-turbo | GPT-4 | MyMemory | groq | winstxnhdw-HLLB | Ollama | DeepSeek-R1 | gemma3 | zongweigemma3-translator1b | gimini-2.0-flash |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+| **Google_V1** | – | 38% | 25% | 25% | 25% | 25% | 24% | 24% | 30% | 29% | 36% | 29% | 39% | 27% | 27% | 32% |
+| **DeepL_V2** | 38% | – | 33% | 33% | 32% | 32% | 32% | 31% | 41% | 52% | 54% | 52% | 59% | 38% | 49% | 55% |
+| **ChatGPT-mini-3o** | 25% | 33% | – | 98% | 96% | 97% | 97% | 96% | 45% | 42% | 38% | 39% | 33% | 46% | 38% | 38% |
+| **GPT-4o-mini** | 25% | 33% | 98% | – | 96% | 97% | 98% | 96% | 45% | 43% | 39% | 40% | 33% | 47% | 39% | 39% |
+| **GPT-4o** | 25% | 32% | 96% | 96% | – | 96% | 96% | 97% | 43% | 41% | 38% | 39% | 32% | 45% | 38% | 38% |
+| **GPT-4o-turbo** | 25% | 32% | 97% | 97% | 96% | – | 97% | 98% | 44% | 42% | 38% | 40% | 31% | 47% | 39% | 39% |
+| **GPT-3.5-turbo** | 24% | 32% | 97% | 98% | 96% | 97% | – | 96% | 44% | 43% | 38% | 39% | 32% | 46% | 38% | 38% |
+| **GPT-4** | 24% | 31% | 96% | 96% | 97% | 98% | 96% | – | 44% | 41% | 37% | 39% | 32% | 46% | 39% | 39% |
+| **MyMemory** | 30% | 41% | 45% | 45% | 43% | 44% | 44% | 44% | – | 61% | 37% | 47% | 40% | 88% | 48% | 58% |
+| **groq** | 29% | 52% | 42% | 43% | 41% | 42% | 43% | 41% | 61% | – | 40% | 63% | 51% | 59% | 61% | 72% |
+| **winstxnhdw-HLLB** | 36% | 54% | 38% | 39% | 38% | 38% | 38% | 37% | 37% | 40% | – | 42% | 64% | 36% | 41% | 41% |
+| **Ollama** | 29% | 52% | 39% | 40% | 39% | 40% | 39% | 39% | 47% | 63% | 42% | – | 57% | 47% | 84% | 46% |
+| **DeepSeek-R1** | 39% | 59% | 33% | 33% | 32% | 31% | 32% | 32% | 40% | 51% | 64% | 57% | – | 38% | 56% | 50% |
+| **gemma3** | 27% | 38% | 46% | 47% | 45% | 47% | 46% | 46% | 88% | 59% | 36% | 47% | 38% | – | 47% | 57% |
+| **zongweigemma3-translator1b** | 27% | 49% | 38% | 39% | 38% | 39% | 38% | 39% | 48% | 61% | 41% | 84% | 56% | 47% | – | 49% |
+| **gimini-2.0-flash** | 32% | 55% | 38% | 39% | 38% | 39% | 38% | 39% | 58% | 72% | 41% | 46% | 50% | 57% | 49% | – |
 
 
 > 🧠 **Interpretation:**  
@@ -216,6 +216,14 @@ Diese Matrix zeigt den tatsächlichen Ähnlichkeitsgrad (textuelle Übereinstimm
 |    ↳ Text von GPT-3.5 turbo                         | Englisch → Englisch                    | 4          | 3          | 4      | 4              | **15**           | 02:00 min       | 00:37 min            | Stimme klingt klar, aber etwas monoton. Die Intonation variiert wenig, was bei längeren Passagen ermüdend wirkt. |
 |    ↳ Text von GPT-4                                 | Englisch → Englisch                    | 4          | 4          | 4      | 5              | **17**           | 02:00 min       | 00:40 min            | Fast fehlerfrei, mit sehr natürlicher Dynamik und professionellem Sprachfluss. |
 | Piper (English Aru, medium, aac)                   | Englisch → Englisch                    | 3          | 2          | 3      | 3              | **11**           | 02:00 min       | 00:55 min            | Ruhiger, aber schwer verständlicher Klang. Die Stimme klingt angenehm, macht aber häufig unnatürliche Pausen und spricht Fachbegriffe undeutlich oder abgehackt aus. |
+| Piper (lessac, high, aac)                          | Englisch → Englisch                    | 4          | 4          | 4      | 4              | **16**           | 02:00 min       | 00:53 min            | Whisper-Modell: large-v1 (Groq) |
+| Piper (kathleen, low, aac)                         | Englisch → Englisch                    | 3          | 3          | 4      | 3              | **13**           | 02:00 min       | 00:50 min            | Whisper-Modell: large-v2 (Winstxnhdw) |
+| Piper (ryan, high, aac)                            | Englisch → Englisch                    | 5          | 4          | 4      | 5              | **18**           | 02:00 min       | 00:55 min            | Whisper-Modell: large-v3 (Ollama) |
+| ↳ Whisper-Modell: large-v3 – DeepSeek R1           | Englisch → Englisch                    | 4          | 3          | 4      | 4              | **15**           | 02:00 min       | 00:57 min            | |
+| ↳ Whisper-Modell: large-v3 – Gemma 3               | Englisch → Englisch                    | 3          | 4          | 3      | 3              | **13**           | 02:00 min       | 01:00 min            | |
+| ↳ Whisper-Modell: large-v3 – ZongweiGemma3         | Englisch → Englisch                    | 3          | 3          | 4      | 3              | **13**           | 02:00 min       | 00:58 min            | |
+| Piper (joe, medium, aac)                           | Englisch → Englisch                    | 5          | 4          | 4      | 3              | **16**           | 02:00 min       | 00:51 min            | Whisper-Modell: large-turbo-v3 (Gemini 2.0 Flash) |
+
 > 🧠 **Interpretation:** Stimmen auf Basis von `GPT-4o`-Texten klingen meist natürlicher und dynamischer. `Piper alain` bietet gute technische Qualität, wirkt aber teils monoton. `Piper Alba` liefert angenehmere Betonung, während `English Aru` hörbar schwächer abschneidet.
 
 
@@ -233,7 +241,34 @@ Diese Matrix zeigt den tatsächlichen Ähnlichkeitsgrad (textuelle Übereinstimm
 | ↳ mit GPT-3.5 turbo                                                                       | 01:06                          | 45                        |
 | ↳ mit GPT-4                                                                               | 01:14                          | 51                        |
 | medium + Purfview's Faster-Whisper-XXL + MyMemory Translate + Piper (English Aru, medium) | 01:15                          | 46                        |
+| **large-v1** – Faster-Whisper-XXL + Groq (Stimme: lessac (high))     | 00:53                        | 43                        |
+| **large-v2** – Faster-Whisper-XXL + Winstxnhdw (Stimme: kathleen (low)) | 00:50                        | 40                        |
+| **large-v3** – Faster-Whisper-XXL + Ollama (Stimme: ryan (high))     | 00:55                        | 46                        |
+| ↳ DeepSeek R1 (Stimme: ryan (high))                                  | 00:57                        | 45                        |
+| ↳ Gemma 3 (Stimme: ryan (high))                                      | 01:00                        | 41                        |
+| ↳ ZongweiGemma3 (Stimme: ryan (high))                                | 00:58                        | 40                        |
+| **large-turbo-v3** – Faster-Whisper-XXL + Gemini 2.0 Flash (Stimme: joe (medium)) | 00:51                        | 39                       |
 > 🧠 **Interpretation:** Die hochwertigsten Kombinationen (z. B. `small + GPT-4o + Piper GPT-4o`) benötigen nur wenig mehr Zeit als deutlich schwächere Varianten, liefern jedoch erheblich bessere Ergebnisse. Für schnelle Anwendungen kann `base + DeepL + Piper` ein effizienter Kompromiss sein.
 
 
 
+### 🗂️ Übersicht ohne Text-to-Speech (nur Whisper + Übersetzung)
+
+| Modellkombination                                                 | Gesamtzeit ohne TTS | Gesamtpunktzahl (von 40) |
+|-------------------------------------------------------------------|----------------------|---------------------------|
+| tiny + Purfview's Faster-Whisper-XXL + Google Translate V1 API   | 00:13               | 23                        |
+| base + Purfview's Faster-Whisper-XXL + DeepL V2                   | 00:11               | 28                        |
+| small + Purfview's Faster-Whisper-XXL + ChatGPT mini 3o           | 00:12               | 33                        |
+| ↳ mit GPT-4o mini                                                | 00:12               | 34                        |
+| ↳ mit GPT-4o                                                     | 00:14               | 34                        |
+| ↳ mit GPT-4o turbo                                               | 00:13               | 34                        |
+| ↳ mit GPT-3.5 turbo                                              | 00:13               | 30                        |
+| ↳ mit GPT-4                                                     | 00:19               | 34                        |
+| medium + Purfview's Faster-Whisper-XXL + MyMemory Translate       | 00:20               | 32                        |
+| large-v1 + Purfview's Faster-Whisper-XXL + Groq                   | 00:36               | 30                        |
+| large-v2 + Purfview's Faster-Whisper-XXL + Winstxnhdw             | 00:17               | 29                        |
+| large-v3 + Purfview's Faster-Whisper-XXL + Ollama                 | 00:33               | 33                        |
+| ↳ DeepSeek R1                                                    | 00:33               | 32                        |
+| ↳ Gemma 3                                                        | 00:33               | 33                        |
+| ↳ ZongweiGemma3                                                  | 00:33               | 31                        |
+| large-turbo-v3 + Purfview's Faster-Whisper-XXL + Gemini 2.0 Flash | 00:21               | 33                        |
