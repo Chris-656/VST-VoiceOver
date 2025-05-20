@@ -1,0 +1,85 @@
+﻿1
+00:00:14,910 --> 00:00:19,590
+Yes, welcome to this tutorial
+in the Dexter Mepping series.
+
+2
+00:00:20,280 --> 00:00:27,910
+This third tutorial will show you
+how you can center a texture of
+
+3
+00:00:27,950 --> 00:00:32,010
+a tree trunk, which you see
+here, on a simple cylinder. cylinder.
+
+4
+00:00:32,190 --> 00:00:37,144
+We have used two textures
+here used here, one texture for the
+
+5
+00:00:37,244 --> 00:00:42,890
+trunk and another texture here
+from the cut of the tree trunk.
+
+6
+00:00:43,300 --> 00:00:47,190
+And I'll show you in a few steps
+how easy it is to get the texture in
+
+7
+00:00:47,191 --> 00:00:54,511
+the right place with the help of UV
+mapping. with the help of UV mapping.
+
+8
+00:00:55,000 --> 00:01:01,730
+Then we start with the Blender
+Diefold screen here the cube.
+
+9
+00:01:02,070 --> 00:01:05,919
+I delete the cube,
+I add a cylinder
+
+10
+00:01:05,943 --> 00:01:10,650
+to it, which I
+scale a little in Z.
+
+11
+00:01:11,575 --> 00:01:18,130
+We can see here that we are not going
+to the modeling of the tree stump, but only
+
+12
+00:01:18,155 --> 00:01:25,631
+how we can optimally center the texture
+on this cylinder. texture to this cylinder.
+
+13
+00:01:28,020 --> 00:01:35,670
+All right, let's take a look
+at the UV editing tools.
+
+14
+00:01:36,765 --> 00:01:40,482
+We also see here in one of
+the earlier tutorials that the
+
+15
+00:01:40,483 --> 00:01:46,070
+cylinder is already correctly
+mapped at this point here.
+
+16
+00:01:47,780 --> 00:01:55,530
+Here we see the side of the cylinder
+and the underside of the cylinder.
+
+17
+00:01:56,420 --> 00:01:59,970
+This is the case with diefold
+objects, even if we completely...
+

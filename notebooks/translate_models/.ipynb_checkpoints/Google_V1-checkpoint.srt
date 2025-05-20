@@ -1,0 +1,113 @@
+﻿1
+00:00:14,950 --> 00:00:20,150
+Yes, welcome to this
+tutorial in Redex Champirping.
+
+2
+00:00:20,290 --> 00:00:25,681
+This third tutorial is
+supposed to show you
+
+3
+00:00:25,682 --> 00:00:27,434
+how to make a texture of
+
+4
+00:00:27,458 --> 00:00:29,210
+a tree trunk, see here.
+
+5
+00:00:29,430 --> 00:00:32,150
+On a simple
+zilinder, in the middle.
+
+6
+00:00:32,390 --> 00:00:37,970
+We used two textures
+here A texture for the trunk.
+
+7
+00:00:38,320 --> 00:00:43,130
+And another texture here
+from the slide of the tree trunk.
+
+8
+00:00:43,530 --> 00:00:45,678
+And I'll show you in a few a
+
+9
+00:00:45,702 --> 00:00:47,850
+few Steps how simple this is
+
+10
+00:00:48,050 --> 00:00:50,721
+possible, here
+the texture in the
+
+11
+00:00:50,745 --> 00:00:54,170
+right place Get help
+from the UV-Mapin.
+
+12
+00:00:55,800 --> 00:00:59,170
+Then we start with the blender default.
+
+13
+00:01:00,090 --> 00:01:02,070
+The buf is turning here.
+
+14
+00:01:02,190 --> 00:01:06,952
+I delete the buffet and add a
+
+15
+00:01:06,976 --> 00:01:11,071
+zilinder to whom
+I scalar in Zett.
+
+16
+00:01:11,575 --> 00:01:18,190
+We see here that we are not closer
+to the modeling of the tree stance
+
+17
+00:01:18,191 --> 00:01:21,689
+and only how we
+optimally the Texture
+
+18
+00:01:21,713 --> 00:01:25,210
+can be in the
+middle of this zilinder.
+
+19
+00:01:28,710 --> 00:01:36,510
+Well, we are now looking at the
+UV Mapin, The UV-Mapin do tools.
+
+20
+00:01:37,010 --> 00:01:40,210
+We also see here in
+an earlier one Tutorials.
+
+21
+00:01:40,990 --> 00:01:46,550
+The zilinder
+already dubbed here.
+
+22
+00:01:46,970 --> 00:01:51,459
+We'll see that here
+Page of the zilinder and
+
+23
+00:01:51,483 --> 00:01:55,971
+The upper and the
+Underside of the zilinder.
+
+24
+00:01:56,430 --> 00:01:59,970
+This is the case with the
+photo objects If we completely ...
+
