@@ -1,0 +1,73 @@
+﻿1
+00:00:14,940 --> 00:00:19,550
+Yes, welcome to this tutorial in the series Texture Mapping.
+
+2
+00:00:20,270 --> 00:00:25,674
+This third tutorial should show you how to apply a texture of
+
+3
+00:00:25,698 --> 00:00:31,910
+a tree trunk, which you can see here, onto a simple cylinder.
+
+4
+00:00:31,911 --> 00:00:37,123
+We have used two textures here, one for the
+
+5
+00:00:37,147 --> 00:00:42,890
+trunk and another texture for the cut of the tree trunk.
+
+6
+00:00:43,430 --> 00:00:47,550
+And I will show you in a few simple steps how easy it is to
+
+7
+00:00:47,920 --> 00:00:53,830
+place the texture in the right position with the help of UV mapping.
+
+8
+00:00:55,820 --> 00:01:01,670
+Then we start with the Blender Default Screen, here the cube.
+
+9
+00:01:02,350 --> 00:01:10,650
+I delete the cube and add a cylinder, which I scale a bit in Z.
+
+10
+00:01:11,575 --> 00:01:16,902
+We see here that we will not go into the
+
+11
+00:01:16,926 --> 00:01:22,630
+modeling of the tree stump in detail, but
+
+12
+00:01:23,080 --> 00:01:25,330
+only on how to apply optimal texture to this cylinder.
+
+13
+00:01:26,740 --> 00:01:35,690
+Alright, let's now look at the UV Editing Tools.
+
+14
+00:01:36,810 --> 00:01:42,190
+We also see here that in one of the previous
+
+15
+00:01:42,390 --> 00:01:44,550
+tutorials, the cylinder is already correctly mapped.
+
+16
+00:01:44,870 --> 00:01:52,750
+At this point here, we see the
+side of the cylinder and the top and
+
+17
+00:01:52,875 --> 00:01:55,490
+bottom of the cylinder.
+
+18
+00:01:56,410 --> 00:01:58,710
+This is the case with default objects.
+

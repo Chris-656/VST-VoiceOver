@@ -1,0 +1,86 @@
+large_v1﻿1
+00:00:14,920 --> 00:00:19,650
+Herzlich Willkommen zu diesem Tutorial in
+der Reihe Texture Mapping.
+
+2
+00:00:20,300 --> 00:00:27,910
+Dieses dritte Tutorial soll Ihnen zeigen,
+wie Sie eine Textur eines Baumstammes,
+
+3
+00:00:27,930 --> 00:00:32,030
+den Sie hier sehen, auf einen einfachen
+Zylinder mappen können.
+
+4
+00:00:32,190 --> 00:00:35,170
+Wir haben hier zwei Texturen verwendet.
+
+5
+00:00:35,410 --> 00:00:42,790
+Eine Textur für den Stamm und eine weitere
+Textur hier vom Schnitt des Baumstammes.
+
+6
+00:00:43,450 --> 00:00:47,550
+Und ich zeige Ihnen in ein paar wenigen
+Schritten, wie einfach das möglich ist,
+
+7
+00:00:47,910 --> 00:00:53,930
+hier die Textur an die richtige Stelle mit
+Hilfe vom UV-Mapping zu bekommen.
+
+8
+00:00:55,800 --> 00:01:01,730
+Dann starten wir mit dem Blender Default
+Screen, hier der Würfel.
+
+9
+00:01:02,270 --> 00:01:10,690
+Ich lösche den Würfel und gebe einen
+Zylinder dazu, den ich etwas in Z skaliere.
+
+10
+00:01:11,570 --> 00:01:16,910
+Wir sehen hier, dass wir hier jetzt nicht
+näher auf die Modellierung des
+
+11
+00:01:16,911 --> 00:01:22,730
+Baumstumpfes eingehen, sondern nur auf,
+wie wir optimal die Textur auf diesen
+
+12
+00:01:23,080 --> 00:01:25,130
+Zylinder mappen können.
+
+13
+00:01:26,770 --> 00:01:35,770
+Gut, wir schauen uns nun die
+UV-Editing-Tools an.
+
+14
+00:01:36,750 --> 00:01:44,010
+Wir sehen hier auch in einem der früheren
+Tutorials, ist der Zylinder bereits richtig gemappt.
+
+15
+00:01:44,890 --> 00:01:49,785
+An dieser Stelle hier, wir
+sehen hier die Seite des
+
+16
+00:01:49,809 --> 00:01:55,490
+Zylinders und die Ober- und
+die Unterseite des Zylinders.
+
+17
+00:01:56,440 --> 00:01:58,730
+Das ist bei Default-Objekten so der Fall.
+
+18
+00:01:59,330 --> 00:02:00,610
+Wenn wir aber komplett umdrehen,
+

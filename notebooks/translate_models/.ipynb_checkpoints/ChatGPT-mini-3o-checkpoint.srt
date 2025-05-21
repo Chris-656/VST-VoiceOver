@@ -1,0 +1,121 @@
+﻿1
+00:00:14,920 --> 00:00:19,550
+Yes, welcome to this tutorial
+in the Texture Mapping series.
+
+2
+00:00:20,300 --> 00:00:24,073
+This third tutorial is intended
+
+3
+00:00:24,097 --> 00:00:27,870
+to show you, how you can place a
+
+4
+00:00:27,871 --> 00:00:29,879
+texture of a tree
+trunk, which you
+
+5
+00:00:29,903 --> 00:00:31,910
+see here, onto
+a simple cylinder.
+
+6
+00:00:31,911 --> 00:00:34,132
+We have used two textures
+
+7
+00:00:34,156 --> 00:00:37,001
+here, one texture for the trunk
+
+8
+00:00:37,002 --> 00:00:39,914
+and another texture here for the
+
+9
+00:00:39,938 --> 00:00:42,850
+cross-section of the tree trunk.
+
+10
+00:00:43,290 --> 00:00:45,408
+And I will show
+you in just a few
+
+11
+00:00:45,432 --> 00:00:47,550
+steps how easily it is possible
+
+12
+00:00:47,920 --> 00:00:50,863
+to get the texture
+into the right
+
+13
+00:00:50,887 --> 00:00:53,830
+place with the
+help of UV Mapping.
+
+14
+00:00:55,820 --> 00:01:01,670
+Then we start with the Blender
+Default screen, here the cube.
+
+15
+00:01:02,370 --> 00:01:06,026
+I delete the cube and add a
+
+16
+00:01:06,050 --> 00:01:10,650
+cylinder, which I scale a bit in Z.
+
+17
+00:01:11,585 --> 00:01:14,826
+We see here that
+we will not go into
+
+18
+00:01:14,850 --> 00:01:18,090
+detail on the
+modeling of the tree
+
+19
+00:01:18,165 --> 00:01:21,565
+stump, but only on
+how we can place
+
+20
+00:01:21,589 --> 00:01:25,591
+an optimal texture
+onto this cylinder.
+
+21
+00:01:28,040 --> 00:01:35,690
+Well, let's now take a
+look at the UV Editing tools.
+
+22
+00:01:36,810 --> 00:01:42,170
+We also see here, as in one of the earlier
+
+23
+00:01:42,370 --> 00:01:43,098
+tutorials, that the cylinder
+
+24
+00:01:43,122 --> 00:01:43,850
+is already mapped correctly.
+
+25
+00:01:44,900 --> 00:01:52,750
+At this point here, we see here the
+side of the cylinder and the top- and
+
+26
+00:01:52,875 --> 00:01:55,490
+Bottom side of the cylinder.
+
+27
+00:01:56,410 --> 00:01:58,710
+This is the case with default objects.
+
