@@ -28,7 +28,33 @@ Die Leistungskennzahlen – insbesondere die Generierungszeiten – hängen maß
 | RAM                    | 32 GB DDR4                                 |
 | Betriebssystem         | Windows 11 Pro                             |
 
+# 📊 Übersicht: Kostenlose / Open-Source Übersetzungs-APIs und -Dienste
 
+| API/Service                                    | Free   | Request Limits (Free Tier)                     | Notes (auf Deutsch)                                                                        |
+|------------------------------------------------|---------|------------------------------------------------|--------------------------------------------------------------------------------------------|
+| Google Translate (web)                         | ✅      | Keine API, nur Web-Nutzung                     | Web-Oberfläche ist kostenlos, aber keine API.                                              |
+| Google Translate V2 API                        | ❌      | Nur kostenpflichtige API                       | Sehr präzise, keine kostenlose offizielle API verfügbar.                                    |
+| ~~Bing Microsoft Translator~~                  | ❌    | —                                              | Nicht mehr verfügbar als eigenständige API.                                                |
+| DeepL V2 Translate                             |  ✅   / ⚠️ | 500.000 Zeichen/Monat (kostenloser Tarif)      | API ist kostenpflichtig, Web-Oberfläche hat jedoch einen kostenlosen Tarif.                 |
+| Ollama (local LLM)                             | ✅      | Keine Limits (lokale Nutzung)                  | Lokale Nutzung ohne Einschränkungen, keine Online-API.                                     |
+| LibreTranslate                                 | ✅      | Keine offiziellen Limits; selbst gehostet       | Open-Source und einfach zu integrieren.                                                    |
+| MyMemory Translate                             | ✅      | 1.000 Anfragen/Tag (kostenloser Tarif)          | Gut für kleinere Projekte oder Testzwecke.                                                 |
+| ChatGPT (OpenAI)                               | ❌ / ⚠️ | Kostenpflichtige API, Web-Version frei (Limits variieren) | API ist kostenpflichtig, Web-Version kann kostenlos genutzt werden (ohne API-Aufrufe).     |
+| LM Studio (local LLM)                          | ✅      | Keine Limits (lokale Nutzung)                  | Lokale Inferenz, keine offizielle Online-API.                                              |
+| ~~KoboldCpp (local LLM)~~                      | ❌    | —                                              | Kein Übersetzungstool. Interaktiver Chatbot, nicht für Übersetzungen geeignet.             |
+| Anthropic Claude                               | ❌      | Nur kostenpflichtige API                       | Kostenpflichtige API, kein kostenloser Tarif.                                              |
+| Groq                                           | ✅      | Im Entstehen; keine offiziellen Nutzungslimits  | Neue Plattform mit kostenloser Nutzung für einige Aufgaben, experimentell.                 |
+| DeepSeek (API)                                 | ❌      | Nur kostenpflichtige API                       | Web-Nutzung kostenlos, API-Zugang kostenpflichtig.                                         |
+| OpenRouter                                     | ✅      | Kostenloser Tarif verfügbar, Nutzung variiert   | API-Gateway für verschiedene Modelle, kostenloser Tarif je nach Anbieter verfügbar.        |
+| Google Gemini                                  | ❌      | Nur kostenpflichtige API                       | Premium-Dienst ohne kostenlosen Tarif.                                                     |
+| Papago Translate                               | ✅      | 10.000 Zeichen/Tag (kostenlos)                 | Kostenloser Tarif, speziell für Koreanisch/Englisch-Übersetzungen.                         |
+| DeepLX Translate                               | ✅      | Keine offiziellen Limits (open-source)         | Nutzt DeepL inoffiziell, basiert auf Open-Source-Lösungen.                                 |
+| Mistral AI Translate                           | ✅      | Keine offiziellen Nutzungslimits                | Neue und experimentelle Plattform.                                                         |
+| AvalAI                                         | ✅      | Limitierte kostenlose Nutzung, neue API         | Neue API für KI-Übersetzung, begrenzter kostenloser Zugriff.                               |
+| thammegowda-nllb-serve                         | ✅      | Selbst gehostet; keine Online-Nutzungslimits    | Lokale NLLB-API für mehrsprachige Übersetzung, keine externen Abhängigkeiten.               |
+| winstxnhdw-nllb-api                            | ✅      | Selbst gehostet; keine Online-Nutzungslimits    | Ähnliche NLLB-basierte API, sehr robust für viele Sprachen.                                |
+
+---
 Die Ergebnisse sind in den folgenden Tabellen zusammengefasst:
 
 
