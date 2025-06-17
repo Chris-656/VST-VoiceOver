@@ -21,7 +21,7 @@ This will create a folder named `semantic_env` in your current directory.
 Activate the virtual environment:
 
 ```bash
-semantic_env\Scripts\activate.bat
+source semantic_env/bin/activate
 ```
 
 You should see `(semantic_env)` appear in your terminal prompt, indicating that the environment is active.
