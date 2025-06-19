@@ -1,0 +1,2 @@
+{"profiles":[
+{"name":"Profile_Vadim_Steshkov", "maxNumberOfLines":"2","cpsLineLengthStrategy":"CalcAll","mergeLinesShorterThan":"60","minimumMillisecondsBetweenLines":"100","subtitleLineMaximumLength":"60","subtitleMaximumCharactersPerSeconds":"20","subtitleMaximumDisplayMilliseconds":"7000","subtitleMaximumWordsPerMinute":"180","subtitleMinimumDisplayMilliseconds":"1500","subtitleOptimalCharactersPerSeconds":"15","dialogStyle":"DashBothLinesWithSpace","continuationStyle":"None"}]}
