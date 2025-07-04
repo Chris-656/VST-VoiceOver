@@ -14,10 +14,10 @@ Dieser Workflow gliedert sich in **vier zentrale Arbeitsschritte**, die jeweils 
 
 | Schritt | Titel | Beschreibung |
 |--------|-------|--------------|
-| **1️⃣** | [🎙️ Transkription: Video → Text](#schritt-1-transkription--vom-video-zum-text) | Mit Whisper automatisch Text aus dem Video extrahieren |
-| **2️⃣** | [🌍 Maschinelle Übersetzung: Text → Sprache](#schritt-2-maschinelle-übersetzung--text--übersetzung) | Untertitel mit DeepL, Google oder lokalen Modellen übersetzen |
-| **3️⃣** | [🔊 Text-to-Speech: Text → Audio](#text-to-speech--optional) | (optional) Vertonung der Texte mit z. B. Piper oder ElevenLabs |
-| **4️⃣** | [🧹 Fehlerprüfung & Export](#automatische-fehlerprufung--korrektur-von-untertiteln) | Untertitel auf Qualität prüfen und korrekt abspeichern/exportieren |
+| **1️⃣** | [🎙️ Schritt 1: Transkription – vom Video zum Text](#🎤-schritt-1-transkription--vom-video-zum-text) | Mit Whisper automatisch Text aus dem Video extrahieren |
+| **2️⃣** | [🌍 Schritt 2: Maschinelle Übersetzung – Text → Übersetzung](#🌍-schritt-2-maschinelle-übersetzung--text--übersetzung) | Untertitel mit DeepL, Google oder lokalen Modellen übersetzen |
+| **3️⃣** | [🔊 Schritt 3: Untertitel vertonen (Text-to-Speech)](#🔊-schritt-3-untertitel-vertonen-text-to-speech) | Vertonung der Texte mit z. B. Piper oder ElevenLabs |
+| **4️⃣** | [🧩 Schritt 4: Untertitel exportieren oder direkt ins Video einbetten](#🧩-schritt-4-untertitel-exportieren-oder-direkt-ins-video-einbetten) | Untertitel prüfen und direkt als Datei oder Video speichern |
 
 
 ---
@@ -555,3 +555,242 @@ Im **File-Menü** finden Sie zusätzliche Optionen:
 
 > 💡 **Tipp:**  
 > Trennen Sie klar zwischen den Sprachversionen – das erleichtert späteres Zusammenfügen, Übersetzen oder Vertonen.
+
+## 🔊 Schritt 3: Untertitel vertonen (Text-to-Speech)
+
+Nachdem Sie Ihre Untertitel übersetzt und geprüft haben, können Sie mit Subtitle Edit direkt eine Sprachausgabe erzeugen. Diese wird automatisch mit dem Video synchronisiert und auf Wunsch direkt ins Video eingefügt.
+
+> ✅ Diese Funktion eignet sich ideal für:
+> - Lernvideos mit mehrsprachiger Vertonung
+> - Barrierefreie Inhalte
+> - Automatisierte Erklärvideos
+
+---
+
+### 🎯 Ziel dieses Schritts:
+
+- Alle Textzeilen mit einer synthetischen Stimme (TTS) automatisch einsprechen lassen
+- Die erzeugte Audiodatei in das Video integrieren
+- Optional einzelne Clips anhören, nachbearbeiten oder exportieren
+
+---
+
+### 📂 Menü öffnen
+
+👉 Menü: `Video → Text to speech and add to video...`
+
+<img src="images/abbildung27.png" alt="TTS Menü öffnen" width="400"/>
+
+📷 *Abbildung 19:* Öffnet das Konfigurationsfenster für die Sprachausgabe.
+
+---
+
+### 🔧 TTS-Engine auswählen
+
+Im Dropdown-Menü „Engine“ können Sie zwischen verschiedenen Anbietern wählen. Jede Engine bietet unterschiedliche Stimmqualitäten, Sprachen und Lizenzmodelle:
+
+<img src="images/voice.png" alt="TTS Engines in Subtitle Edit" width="500"/>
+
+📷 *Abbildung 20:* Auswahl typischer Text-to-Speech-Engines.
+
+| Engine                              | Beschreibung                                           |
+|-------------------------------------|--------------------------------------------------------|
+| **Piper (fast/good)**               | Offline, schnell, gute Qualität                        |
+| **ElevenLabs TTS**                  | Online, kostenpflichtig, sehr natürlich                |
+| **Microsoft Azure TTS**             | Online, zuverlässig, professionelle Integration        |
+| **Tortoise TTS**                    | Sehr hochwertige Stimme, aber langsam                  |
+| **Coqui TTS / AllTalk TTS**         | Lokale Alternativen mit akzeptabler Qualität           |
+| **Murf, OpenAI, Groq etc.**         | Weitere Cloud-basierte APIs mit Registrierungspflicht  |
+
+> 💡 Tipp: Für schnelle Tests eignet sich `Piper`, für hochwertige Vertonung `Tortoise` oder `ElevenLabs`.
+
+---
+
+### 🛠️ Grundeinstellungen
+
+Im nächsten Fenster wählen Sie Sprache, Stimme, Test und Modus für den Audioexport:
+
+<img src="images/abbildung28.png" alt="TTS Grundeinstellungen" width="400"/>
+
+📷 *Abbildung 21:* Grundeinstellungen für Sprache, Stimme und Ausgabe.
+
+| Feld                   | Bedeutung                                                                 |
+|------------------------|---------------------------------------------------------------------------|
+| **Voice**              | Stimmen je nach Engine – z. B. `ryan (high)`, `amy`, `joe`, `kathleen`     |
+| **Test voice**         | Kurzer Test zur Qualitätsprüfung                                          |
+| **Add audio to video** | Erstellt automatisch neues Video mit eingefügtem Ton                      |
+
+> 📦 Falls `Piper` noch nicht installiert ist, erscheint ein Dialog:  
+> 👉 **Download Piper Text to Speech** → `Yes`
+
+<img src="images/download.png" alt="Download TTS Engine" width="300"/>
+
+---
+
+### 🧑‍🎤 Stimme auswählen
+
+<img src="images/abbildung29.png" alt="Stimmenauswahl" width="500"/>
+
+📷 *Abbildung 22:* Auswahl typischer Stimmen für Englisch (z. B. `ryan`, `amy`, `lessac`, `joe`).
+
+> 🧠 **Tipp:** Stimmen mit `(high)` klingen natürlicher, `(low)` oder `(medium)` sind eher maschinell.
+
+---
+
+### ⚙️ Erweiterte Optionen
+
+Sie können die Audioausgabe individuell anpassen:
+
+<img src="images/menu.png" alt="Erweiterte Audiooptionen" width="300"/>
+
+📷 *Abbildung 23:* Optionen für Feineinstellungen.
+
+| Option                       | Funktion                                                                 |
+|------------------------------|--------------------------------------------------------------------------|
+| ✅ **Review audio clips**    | Einzelne Audios überprüfen                                               |
+| ✅ **Add audio to video**    | Audio wird direkt in Videodatei eingefügt                                |
+| ✅ **Custom audio encoding** | Eigenes Format wie `.aac`, `.wav` oder `.ogg`                            |
+| ✅ **Use voice over**        | Audio wird als Kommentarspur ergänzt (statt Original ersetzen)            |
+
+---
+
+### 🔈 Audioformat wählen
+
+<img src="images/audio_codec.png" alt="Audioformat auswählen" width="300"/>
+
+📷 *Abbildung 24:* Empfohlen: `aac` für moderne Player. Optional: `wav`, `mp3`, `ogg`.
+
+---
+
+### 👂 Vorschau der Clips (optional)
+
+Wenn Sie die Überprüfung aktiviert haben, erscheint eine Liste aller Audio-Clips:
+
+<img src="images/abbildung30.png" alt="Audio-Vorschau" width="600"/>
+
+📷 *Abbildung 25:* Hier können Sie jede generierte Tonspur abspielen, stoppen oder bearbeiten.
+
+---
+
+### 💾 Ergebnis exportieren
+
+Nach Abschluss des Vorgangs erstellt Subtitle Edit zwei Dateien:
+
+<img src="images/abbildung31.png" alt="Exportiertes Video mit TTS" width="500"/>
+
+📷 *Abbildung 26:* Links: Originalvideo – Rechts: Datei mit synthetischer Tonspur (`Text-to-Speech`).
+
+---
+
+> 🧠 **Hinweis:**  
+> Wenn Sie später eine andere Stimme verwenden möchten, wiederholen Sie den Vorgang mit geänderten Einstellungen.
+
+<!-- ---
+
+## 🖥️ Ergebnisvorschau: Videofenster mit Ton, Text und Untertiteln
+
+Nach dem Hinzufügen der Sprachausgabe sehen Sie im Vorschaubereich von Subtitle Edit:
+
+- 🎞️ Das Video mit eingeblendeten Untertiteln  
+- 🔊 Die neu erzeugte Audiospur synchronisiert zur jeweiligen Textzeile  
+- 💬 Anzeige des Originaltexts + Übersetzung  
+- 📈 Rote Wellenform zeigt die gesprochene Stimme (Voice-over) pro Abschnitt
+
+<img src="images/abbildung32.png" alt="Ergebnis mit Video, Tonspur und Untertiteln" width="800"/>
+
+Abbildung 27: Der Text wurde erfolgreich vertont und synchron im Video dargestellt.
+
+---
+
+✅ Damit haben Sie erfolgreich einen vollständigen **Text-to-Speech-Workflow** umgesetzt – inklusive:
+
+- Übersetzung
+- Vertonung
+- Synchronisierung
+- Export im neuen Videoformat
+
+> 💡 Alternativ können Sie das Audio auch separat speichern oder über andere Engines erneut generieren lassen.
+
+🔗 Weiter zum nächsten Schritt: [🧩 Untertitel einbetten oder exportieren](#🧩-integration-untertitel-ins-video)
+
+--- -->
+## 🧩 Schritt 4: Untertitel exportieren oder direkt ins Video einbetten
+
+
+Im letzten Schritt möchten wir die Untertitel finalisieren – entweder als `.srt` exportieren oder direkt ins Video einbrennen.
+
+---
+
+### 📥 Untertiteldatei importieren
+
+Zuerst wählen wir die gewünschte Sprachversion (z. B. Englisch `.en`) aus und laden sie:
+
+👉 Menü: **`File → Open`**
+
+<img src="images/open.png" alt="Abbildung: Untertitel öffnen" width="400"/>
+
+---
+
+### 🎞️ Vertontes Video öffnen
+
+Jetzt öffnen wir das vertonte Video, das wir im vorherigen Schritt erzeugt haben:
+
+👉 Menü: **`Video → Open video file…`**
+
+<img src="images/open_file.png" alt="Abbildung: Video öffnen" width="400"/>
+
+---
+
+### 🔥 Untertitel ins Video einbrennen
+
+👉 Menü: **`Video → Generate video with burned-in subtitle…`**
+
+<img src="images/video_menu.png" alt="Abbildung: Burned-In Subtitle" width="400"/>
+
+📷 *Abbildung: Menü zur Auswahl der Exportvarianten mit Untertiteln.*
+
+---
+
+### ℹ️ Unterschiede der Exportoptionen
+
+| Funktion                                           | Beschreibung                                                                                      | Empfohlen für...                                |
+|---------------------------------------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------|
+| **Generate video with burned-in subtitle**        | Untertitel werden **fix in das Bild eingebrannt** – nicht mehr entfernbar.                        | YouTube, Instagram, Endversionen                |
+| **Generate video with added/removed embedded subtitles** | Fügt Untertitel als **ein-/ausblendbare Textspur** hinzu (z. B. `.mkv`, `.mp4`, `.webm`)         | Lokale Player, VLC, barrierefreie Distribution  |
+| **Generate transparent video with subtitles**     | Erstellt ein Video mit **transparentem Hintergrund und Untertiteln** (Overlay für Schnittsoftware) | Final Cut, Premiere Pro                         |
+
+> 🧠 **Tipp:** Für Web-Uploads (z. B. Social Media, Moodle, Vimeo) ist „burned-in“ ideal – es garantiert, dass der Text angezeigt wird, unabhängig vom Player oder Gerät.
+
+---
+
+Falls du auch den Unterschied zwischen `.srt` und eingebetteten `.mkv`-Tracks brauchst – просто скажи, я добавлю.
+
+
+### ✏️ Untertitel-Stil und Videoqualität anpassen
+
+| Einstellung       | Empfohlener Wert       | Beschreibung                        |
+|-------------------|------------------------|-------------------------------------|
+| **Font size**     | `50`                   | Größe der Untertitel-Schrift        |
+| **Outline**       | `6`                    | Dicke des äußeren Rands             |
+| **Textfarbe**     | Weiß                   | Farbe des eigentlichen Texts        |
+| **Boxfarbe**      | Dunkelgrau             | Hintergrundfarbe hinter dem Text    |
+| **Encoding**      | `libx264`              | Gängiger Videocodec für MP4         |
+| **Resolution**    | `1920×1080`            | Full-HD Auflösung                   |
+| **Preset**        | `medium`               | Kompromiss zwischen Qualität & Zeit |
+
+<img src="images/settings_menu.png" alt="Abbildung: Stiloptionen für Untertitel" width="400"/>  
+<img src="images/size_menu.png" alt="Abbildung: Video-Export-Einstellungen" width="400"/>
+
+
+### 💾 Exportieren
+
+Wählen Sie abschließend Speicherort und Dateinamen:
+
+<img src="images/output.png" alt="Abbildung: Datei speichern" width="500"/>
+
+---
+
+✅ **Fertig!**  
+Das Video ist nun **sprachlich vertont** und **mit eingebetteten Untertiteln** versehen – bereit für Veröffentlichung oder Archivierung.
+
+---
